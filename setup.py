@@ -11,7 +11,7 @@ setuptools.setup(
     description="Quick REST API creation",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/stefanobazzi/sampleproject",
+    url="https://github.com/stefanobazzi/django_startapi",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
