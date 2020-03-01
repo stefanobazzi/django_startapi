@@ -81,7 +81,7 @@ Config file structure:
                 born_date: DateField(null=True)
             Band:
                 name: CharField(max_length=100)
-                author: ManyToMany('Musician')
+                author: ManyToManyField('Musician')
         album:
             Genre:
                 name: CharField(max_length=100)
@@ -92,3 +92,4 @@ Config file structure:
                 band: ForeignKey('band.Band',  on_delete=models.DO_NOTHING)
                 label: ForeignKey('Label',  on_delete=models.DO_NOTHING)
                 date: DateField(null=True)
+

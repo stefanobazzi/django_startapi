@@ -44,7 +44,7 @@ def register_apps(path, apps):
     apps_config = ["    '{}.apps.{}Config',\n".format(app, app.capitalize())
                    for app in apps.keys()]
     installed_apps = "    'rest_framework',\n    'rest_framework.authtoken',\n"\
-                     + ",\n".join(apps_config)
+                     + "".join(apps_config)
     with Insert(path) as insert:
         insert.after("    'django.contrib.staticfiles'", installed_apps)
 

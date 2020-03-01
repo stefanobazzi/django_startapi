@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 import argparse
-from django_start_api.start_api import create_api
+from django_startapi.start_api import create_api
 
 
 def main():
