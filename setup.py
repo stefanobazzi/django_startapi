@@ -21,7 +21,7 @@ setuptools.setup(
     scripts=['bin/startapi'],
     python_requires='>=3.6',
     install_requires=[
-        "Django>=3.0.2",
+        "Django>=3.0.3",
         "djangorestframework>=3.11.0",
         "PyYAML>=5.3",
     ]
